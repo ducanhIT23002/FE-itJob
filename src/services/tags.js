@@ -1,7 +1,6 @@
 import {GetlistTag} from "../query/index"
 
-const path = "http://localhost:3000/graphql"
-
+const path = process.env.REACT_APP_GRAPHQL_ENDPOINT;
 export const listTag = async () => {
     const query = GetlistTag
     const res = await fetch(path, {

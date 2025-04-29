@@ -1,7 +1,6 @@
 import {getlistCV , getItemCV} from "../query/index"
 import { createCV , statusCV ,DeleteCV} from "../mutation"
-const path = "http://localhost:3000/graphql"
-
+const path = process.env.REACT_APP_GRAPHQL_ENDPOINT;
 export const ListCV = async  () => {
     const query = getlistCV
     const res = await fetch(path, {

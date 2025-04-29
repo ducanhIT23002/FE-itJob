@@ -1,8 +1,7 @@
 import { createUser } from "../mutation";
 import { ListUser } from "../query";
 
-const path = "http://localhost:3000/graphql"
-
+const path = process.env.REACT_APP_GRAPHQL_ENDPOINT;
 export const User = async (users) => {
     const query = createUser(users)
     const res = await fetch(path, {

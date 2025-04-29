@@ -1,6 +1,6 @@
 import {getlistCompany , getItemCompary } from "../query/index"
 import { updateCPN } from "../mutation"
-const path = "http://localhost:3000/graphql"
+const path = process.env.REACT_APP_GRAPHQL_ENDPOINT;
 
 export const ListCompany = async  () => {
     const query = getlistCompany

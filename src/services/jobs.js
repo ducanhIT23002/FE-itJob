@@ -1,7 +1,6 @@
 import {getListJob , getAJob} from "../query/index"
 import { CreateAJob, UpdateAJob , DeleteJob} from "../mutation"
-const path = "http://localhost:3000/graphql"
-
+const path = process.env.REACT_APP_GRAPHQL_ENDPOINT;
 export const jobs = async  () => {
     const query = getListJob
     const res = await fetch(path, {
