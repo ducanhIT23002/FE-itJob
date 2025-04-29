@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+.layout_default {
+    &_header {
+        top : 0;
+        width: 100%;
+        position: fixed;
+        background-color : #F1F1F1;
+        padding: 20px 50px;
+        display : flex;
+        justify-content: space-between;
+        z-index: 999;
+        &_title {
+            font-size: 30px;
+            color: #246FF9;
+            font-weight: 900;
+        }
+        &_authority Button{
+            margin-right: 10px;
+        }
+    }
+    &_main {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 90px;
+        height: 100vh;
+    }
+    &_footer {
+        margin-top: 10px;
+        padding: 20px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+}

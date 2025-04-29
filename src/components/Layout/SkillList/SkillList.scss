@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.skill_list {
+    display: flex;
+    margin-bottom: 10px;
+    &_item {
+        background-color: #E6F4FF;
+        margin-right: 10px;
+        border: 1px solid #91CAFF;
+        border-radius: 4px;
+        padding: 2px 10px;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

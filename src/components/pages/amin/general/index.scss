@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.dash_board {
+    padding: 20px;
+    &_title {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.collection {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}

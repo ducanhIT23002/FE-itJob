@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.layout-default {
+  min-height: 100vh;
+}
+
+// .main {
+//     div {
+//         height: 100px;
+//     }
+// }
+
+.sider {
+    background-color: white;
+    // width : 100px;
+}
+
+.header {
+    /* biến width của logo */
+    --logo-width: 200px;
+  
+    display: flex;
+    background-color: #fff;
+    
+    /* khi collapsed thì override biến */
+    &--collapsed {
+      --logo-width: 100px;
+    }
+  
+    &__logo {
+      width: var(--logo-width);
+      transition: width 0.3s;
+      font-weight: bold;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+    }
+  
+    &__nav {
+      width: calc(100% - var(--logo-width));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &-left {
+        .header__collapse {
+          cursor: pointer;
+          padding: 0 16px;
+          display: flex;
+          align-items: center;
+        }
+      }
+  
+      &-right {
+        display: flex;
+        gap: 8px;
+        padding: 0 16px;
+      }
+    }
+  }
+  
